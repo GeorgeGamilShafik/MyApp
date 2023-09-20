@@ -1,0 +1,13 @@
+<h4>Internal server error - refreshing the pahe will make the error dpsappear.</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: if you are seeing this then angular is probably not to blame.</p>
+    <p>what to do next?</p>
+    <ol>
+        <li> Open chrome dev tools! then check the failing request in the network tab.</li>
+        <li> Examine the URL - waht API endpoint are you requestin?</li>
+        <li> Reproduce the problem in Postman - if we get dam error Angular 100% not the problem.</li>
+    </ol>
+    <p style="font-weight: bold;"> Following in the stack trace - the first few lines will till you which line of code caused the issue in the API</p>
+    <code class="mt-5" style="background-color: whitesmoke;"> {{error.details}}</code>
+</ng-container>
