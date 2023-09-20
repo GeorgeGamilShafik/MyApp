@@ -8,7 +8,7 @@ import { User } from '../models/user';
   //as one of the providers in the root module which is AppModule.ts
 })
 export class AccountService {
-  baseUrl = 'http://localhost:5030/api/';
+  baseUrl = 'http://localhost:5001/api/';
   private currentUserSource = new BehaviorSubject<User | null>(null);
   currentUser$ = this.currentUserSource.asObservable();
 
