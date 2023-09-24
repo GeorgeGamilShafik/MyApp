@@ -1,6 +1,7 @@
 export interface User{
     userName: string,
-    token: string
+    token: string,
+    photoUrl: string;
 }
 
 // let x: string | number = 33;
